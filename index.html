@@ -54,15 +54,17 @@ and is wrapped around the whole page content, except for the footer in this exam
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-center">
           <h3>INTRODUCTION</h3>
-          <h5>Introduction to Teaching Writing at the Secondary Level <!--span class="w3-opacity">May 3, 2021</span--></h5>
+          <h5>Introduction to Teaching Writing at the Secondary Level (EDLA3110) Assignment <!--span class="w3-opacity">May 3, 2021</span--></h5>
         </div>
 
         <div class="w3-justify">
           <img src="/images/girl_hat.jpg" alt="Girl Hat" style="width:100%" class="avatar-image w3-padding-16">
-          <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
-            magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p>
+            Writing in the Secondary School: A Guide for Teachers and Pre-service Teachers were developed to help practitioners in the teaching profession, foster and improve, through awareness and practical approaches, teachers’ skills in teaching writing to promote student adeptness or proficiency in English. 
+            It is designed particularly for teachers to recognize that the process of writing is not a linear one. Therefore, the focus is on teaching writing using methods of engagement to encourage student involvement in writing, individually and collaboratively, so that when they communicate in writing, it is effective. 
+            It was designed so that teachers can make learning and writing fun and interactive, as well as, being aware of the difficulties that exist in student writing and develop instructional designs to correct them accordingly.
+          </p>
+          <!--p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p-->
           <p class="w3-clear"></p>
           
         </div>
@@ -77,9 +79,8 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
 
         <div class="w3-justify">
-          <img src="/images/man_hat.jpg" alt="Men in Hats" style="width:100%" class="avatar-image w3-padding-16">
-          <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
-          <p>You have now read and listened to information on "The Nature of Writing". 
+          <img src="images/tajay.jpg" alt="image of Tajay Henry" style="width:10%" class="avatar-image w3-padding-16">
+          <p>You have now read and listened to information on <strong>"The Nature of Writing"</strong>. 
             You have even discussed many of the theorists in class and have come away with an expanded view of their theories. 
             Please take the time out now to make sense of what you have learnt. <a style="text-decoration-line: none; color:blue;" href="article1.html"><em>Read more...</em></a></p>
           <p class="w3-left"><a class="w3-button w3-white w3-border" href="article1.html"><b>Read Full Article</b></a></p>
@@ -118,7 +119,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
         <div class="w3-container w3-black">
           <h4>Profile</h4>
-          <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+          <p>The site contributors are Tajay Henry, Julia Fisher and Kadian Forrest. We are teachers and pre-service teachers of the University of the West Indies, in the Faculty of Humanities and Education. This site aims to fulfill one of our group assignments of the EDLA3110 course, <em>Writing IN The Secondary School</em>. This course is headed by Lecturer Dr. Schantol Moore and is requirements to the B.Ed in teaching.</p>
         </div>
       </div>
       <hr>
@@ -126,7 +127,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       <!-- Posts -->
       <div class="w3-white w3-margin">
         <div class="w3-container w3-padding w3-black">
-          <h4>My Articles</h4>
+          <h4>Articles</h4>
         </div>
         <ul class="w3-ul w3-hoverable w3-white">
           <a style="text-decoration: none;" href="article1.html">
@@ -141,7 +142,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <a style="text-decoration: none;" href="article4.html">
               <li class="w3-padding-16">
                   <img src="images/tajay.jpg" alt="Image of Tajay Henry" class="w3-left w3-margin-right" style="width:50px">
-                  <span class="w3-large">Characteristics of a Great Teacher</span>
+                  <span class="w3-medium">Nine Characteristics of a Great Teacher</span>
                   <br>
                   <span>Tajay Henry</span>   
               </li>
@@ -150,7 +151,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <a style="text-decoration: none;" href="article5.html">
               <li class="w3-padding-16">
                   <img src="images/tajay.jpg" alt="Image of Tajay Henry" class="w3-left w3-margin-right" style="width:50px">
-                  <span class="w3-large">Article5</span>
+                  <span class="w3-medium">Philosophy/Approahes to Teaching Writing</span>
                   <br>
                   <span>Tajay Henry</span>   
               </li>
@@ -265,10 +266,13 @@ function myFunction(id) {
 function likeFunction(x) {
   x.style.fontWeight = "bold";
   if(x.innerHTML == " Like"){
+    x.className.replace(" fa", "");
+    x.className.replace(" fa-thumbs-up", "");
     x.innerHTML = "✓ Liked";
   }
   else{
-    x.className += " fa fa-thumbs-up";
+    x.className += " fa";
+    x.className += " fa-thumbs-up";
     x.innerHTML = "Like"
   }
 }
