@@ -38,8 +38,8 @@ and is wrapped around the whole page content, except for the footer in this exam
     <a href="index.html">
     <img class="w3-image" src="images/tajaymain.jpg" alt="Writing Journey" width="1600" height="1060"></a>
     <div class="w3-display-left w3-padding-large">
-      <h1 class="w3-text-green">Writing in the Secondary School:</h1>
-      <h1 class="w3-text-green w3-jumbo w3-hide-small line2" ><b>A Guide for Teachers and Pre-service Teachers</b></h1>
+      <h1 class="stroked w3-text-green">Writing in the Secondary School:</h1>
+      <h1 class="stroked w3-text-green w3-jumbo w3-hide-small line2" ><b>A Guide for Teachers and Pre-service Teachers</b></h1>
       <!--h6><a class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" href="index.html" onclick="document.getElementById('subscribe').style.display='block'">HOME</button></h6-->
     </div>
   </header>
@@ -126,57 +126,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       <hr>
 
       <!-- Posts -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Articles</h4>
-        </div>
-        <ul class="w3-ul w3-hoverable w3-white">
-          <a style="text-decoration: none;" href="article1.html">
-            <li class="w3-padding-16">
-                <img src="images/tajay.jpg" alt="Image of Tajay Henry" class="avatar-image w3-left w3-margin-right" style="width:50px">
-                <span class="w3-large">The Nature of Writing</span>
-                <br>
-                <span>Tajay Henry</span>   
-            </li>
-          </a>
-
-          <a style="text-decoration: none;" href="article4.html">
-              <li class="w3-padding-16">
-                  <img src="images/tajay.jpg" alt="Image of Tajay Henry" class="avatar-image w3-left w3-margin-right" style="width:50px">
-                  <span class="w3-medium">Nine Characteristics of a Great Teacher</span>
-                  <br>
-                  <span>Tajay Henry</span>   
-              </li>
-          </a>
-
-          <a style="text-decoration: none;" href="article5.html">
-              <li class="w3-padding-16">
-                  <img src="images/tajay.jpg" alt="Image of Tajay Henry" class="avatar-image w3-left w3-margin-right" style="width:50px">
-                  <span class="w3-medium">Philosophy/Approahes to Teaching Writing</span>
-                  <br>
-                  <span>Tajay Henry</span>   
-              </li>
-          </a>
-
-          <a style="text-decoration: none;" href="article2.html">
-            <li class="w3-padding-16">
-                <img src="images/julia.jpg" alt="Image of Julia Brown-Nelson" class="avatar-image w3-left w3-margin-right" style="width:50px">
-                <span class="w3-large">Paradigm Shifts in Writing</span>
-                <br>
-                <span>Julia Brown-Nelson</span>
-            </li>
-          </a>
-
-          <a style="text-decoration: none;" href="article3.html">
-              <li class="w3-padding-16">
-                  <img src="images/kadian.jpg" alt="Image of Kadian Forrest" class="avatar-image w3-left w3-margin-right" style="width:50px">
-                  <span class="w3-large">Writing in the Digital Age</span>
-                  <br>
-                  <span>Kadian Forrest</span>
-              </li>
-          </a>
-        </ul>
-      </div>
+      <?php include "sidebar.php"; ?>
       <hr>
 
       <!-- Advertising -->
@@ -247,10 +197,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-dark-grey" style="padding:32px">
-  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Copyright &copy; 2021, <a href="https://www.instagram.com/marlonlewis2020" target="_blank">Marlon Lewis</a></p>
-</footer>
+<?php include "footer.php"; ?>
 
 <script>
 // Toggle between hiding and showing blog replies/comments

@@ -29,18 +29,11 @@ and is wrapped around the whole page content, except for the footer in this exam
   <header class="w3-container w3-center w3-padding-48 w3-white">
     <h1 class="w3-xxxlarge"><b>Writing in the Secondary School: A Guide for Teachers and Pre-service Teachers</b></h1>
     <a class="mylink" style="text-decoration-line: none; text-align: center;" href="#begin">
-    <h6>Nine Characteristics of a <span class="w3-tag">Great Teacher</span></h6></a>
+    <h6>Paradigm Shifts in <span class="w3-tag">Writing Instruction</span></h6></a>
   </header>
 
   <!-- Image header -->
-  <header class="w3-display-container w3-wide" id="home"><a href="index.html">
-    <img class="w3-image" src="images/tajaymain.jpg" alt="Writing Journey" width="1600" height="1060"></a>
-    <div class="w3-display-left w3-padding-large">
-      <h1 class="w3-text-green">Writing in the Secondary School:</h1>
-      <h1 class="w3-text-green w3-jumbo w3-hide-small"><b>A Guide for Teachers and Pre-service Teachers</b></h1>
-      <h6><a class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" href="index.html">HOME</a></h6>
-    </div>
-  </header>
+  <?php include "header.php"; ?>
 
   <!-- Grid -->
   <div id="begin" class="w3-row w3-padding w3-border">
@@ -51,21 +44,29 @@ and is wrapped around the whole page content, except for the footer in this exam
       <!-- Blog entry -->
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-center">
-          <h3>Nine Characteristics of a Great Teacher</h3>
-          <h5>Tajay Henry, <span class="w3-opacity">May 8, 2021</span></h5><br><br>
+          <h3>Paradigm Shifts in Writing Instruction</h3>
+          <h5>Julia Brown-Nelson, <span class="w3-opacity">May 8, 2021</span></h5><br><br>
         </div>
 
         <div class="w3-justify">
-          <img src="images/tajay.jpg" alt="image of Tajay Henry" style="width:10%" class="avatar-image w3-padding-16">
-          <h6>
-            <strong>Second Draft: Nine Characteristics of a Great Teacher</strong>
-          </h6>
-          <iframe width="100%" height="2145px" src="https://docs.google.com/document/d/e/2PACX-1vTVR2CtCeXjvGKH_nHqqUuDJgpjnwlSkVRHOpgCMlk6Up_HucnUi1h8NxzlLpdXZKGMZ-2hAMBvzEue/pub?embedded=true"></iframe>
+            <div style="display:flex">
+            <div style="width:33%">
+            <img src="images/julia.jpg" alt="image of Julia Brown-Nelson" style="width:15%; text-align: left;" class="avatar-image w3-padding-16">
+            </div>
+            <div style="padding-left:25%; width:50%; text-align: center;">
+            <span style="text-align: center; padding-left:55px"><strong>Audio Dramatization</strong></span>
+            <audio src="audio/Julia.mp4" controls>Your browser does not support this audio format</audio>
+            </div>
+            </div>
+            <h6>
+              <strong>Second Draft: Paradigm Shifts in Writing Instruction</strong>
+            </h6>
+          <iframe width="100%" height="5000px" src="https://docs.google.com/document/d/e/2PACX-1vSwjxOaAIpF_vos8IC5dtyq1YLvXSFniYdD-mfJVEMj4eYUmBIZ4w-RvfA6AMeYbA/pub?embedded=true"></iframe>
           <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Click to see First Draft</b></button></p>
           <p class="w3-clear"></p>
           <div style="display:none;" class="w3-row w3-margin-bottom w3-center w3-show" id="demo1" >
-            <iframe width="100%" height="2250px" src="https://docs.google.com/document/d/e/2PACX-1vQf-toZ2YOcHu3REhDTdVBnaK24-tmEagJJFWYoAA8SAJw4OBiEffL65qnImFoY3Q/pub?embedded=true"></iframe>
-          </div>
+            <iframe width="100%" height="1900px" src="https://docs.google.com/document/d/e/2PACX-1vS97MlRp6V3cNLOvwnhOp4IGf7fI7VLyrJEUmyZVHaYWJVmsMYmbkSMeJm7Bs5eQ-h5sDm3XPhbp7pN/pub?embedded=true"></iframe>
+            </div>
         </div>
       </div>
       <hr>
@@ -77,61 +78,8 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-col l4">
 
       <!-- Posts -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Articles</h4>
-        </div>
-        <ul class="w3-ul w3-hoverable w3-white">
-            <a style="text-decoration: none;" href="article1.html">
-                <li class="w3-padding-16">
-                    <img src="images/tajay.jpg" alt="Image of Tajay Henry" class="avatar-image w3-left w3-margin-right" style="width:50px">
-                    <span class="w3-large">The Nature of Writing</span>
-                    <br>
-                    <span>Tajay Henry</span>   
-                </li>
-            </a>
-
-            <a style="text-decoration: none;" href="article4.html">
-                <li class="w3-padding-16">
-                    <img src="images/tajay.jpg" alt="Tajay Henry" class="avatar-image w3-left w3-margin-right" style="width:50px">
-                    <span class="w3-medium">Nine Characteristics of a Great Teacher</span>
-                    <br>
-                    <span>Tajay Henry</span>   
-                </li>
-            </a>
-
-            <a style="text-decoration: none;" href="article5.html">
-                <li class="w3-padding-16">
-                    <img src="images/tajay.jpg" alt="Image of Tajay Henry" class="avatar-image w3-left w3-margin-right" style="width:50px">
-                    <span class="w3-medium">Philosophy/Approahes to Teaching Writing</span>
-                    <br>
-                    <span>Tajay Henry</span>   
-                </li>
-            </a>
-
-            <a style="text-decoration: none;" href="article2.html">
-            <li class="w3-padding-16">
-                <img src="images/julia.jpg" alt="image of Julia Brown-Nelson" class="avatar-image w3-left w3-margin-right" style="width:50px">
-                <span class="w3-large">Paradigm Shifts in Writing</span>
-                <br>
-                <span>Julia Brown-Nelson</span>
-            </li>
-            </a>
-
-            <a style="text-decoration: none;" href="article3.html">
-                <li class="w3-padding-16">
-                    <img src="images/kadian.jpg" alt="Tajay Henry" class="avatar-image w3-left w3-margin-right" style="width:50px">
-                    <span class="w3-large">Writing in the Digital Age</span>
-                    <br>
-                    <span>Kadian Forrest</span>
-                </li>
-            </a>
-            
-        </ul>
-      </div>
+      <?php include "sidebar.php"; ?>
       <hr>
-
-      <!-- Tags -->
 
         <!-- Inspiration -->
         <div class="w3-white w3-margin">
@@ -150,7 +98,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             </div>
             </div>
             <hr>
-            
+      <!-- Tags -->
       <!--div class="w3-white w3-margin">
         <div class="w3-container w3-padding w3-black">
           <h4>Tags</h4>
@@ -178,10 +126,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
 <!-- Footer -->
-<footer class="w3-container w3-dark-grey" style="padding:32px">
-  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Copyright &copy; 2021, <a href="https://www.instagram.com/marlonlewis2020" target="_blank">Marlon Lewis</a></p>
-</footer>
+<?php include "footer.php"; ?>
 
 <script>
 // Toggle between hiding and showing blog replies/comments
