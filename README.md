@@ -1,1 +1,0 @@
-# thewritingcorner.github.io
